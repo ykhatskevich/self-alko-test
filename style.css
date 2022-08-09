@@ -7,14 +7,15 @@
 }
 
 .container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	align-items: center;
-	background-image: linear-gradient(#9fa4c4, #b3cdd1);
 	min-height: 100vh;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255);
 }
 
 .solid {
@@ -32,8 +33,8 @@
 }
 
 .btn:hover {
-	background-color: black;
-	color: white;
+	background-color: yellowgreen;
+	color: black;
 }
 
 .container2 {
@@ -47,16 +48,70 @@
 	margin: 20px 40px 0;
 }
 
+/* div zawierający obrazek z butelką */
+.wine {
+	position: absolute;
+	left: 20px;
+	width: 400px;
+}
+.wine img {
+	max-width: 100%;
+	max-height: auto;
+}
+
+.beer {
+	position: absolute;
+	right: 20px;
+	width: 400px;
+}
+
+.beer img {
+	max-width: 100%;
+	max-height: auto;
+}
+
+.drunk {
+	position: relative;
+	margin-top: 50px;
+	-webkit-box-reflect: below -55px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.drunk span {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	animation: drunkletters 1s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes drunkletters {
+	0% {
+		transform: translateY(0px);
+	}
+
+	20% {
+		transform: translateY(-20px);
+	}
+
+	40%,
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 h1 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-size: 2.5rem;
+	color: white;
 }
 
 h3 {
 	max-width: 500px;
 	margin: 10px 0 20px;
 	font-size: 1.3rem;
+	color: lightgray;
+	font-weight: light;
 }
 
 div * p {
