@@ -17,6 +17,7 @@ function results(e) {
 		}
 	});
 
+
 	if (score >= 5 && score <= 10) {
 		yourScore.innerHTML = `Your score is ${score}. It looks like you have a severe drinking problem. You might need to seek help of a specialist.`;
 	} else if (score < 5 && score >= 2) {
@@ -28,4 +29,4 @@ function results(e) {
 	document.myForm.reset();
 }
 
-// The idea is to display the results in html in Results section. For each 'yes' the user gets 1 point.when there is no point
+
