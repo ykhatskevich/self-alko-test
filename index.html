@@ -10,35 +10,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="drunk">
-            <h1>
-                Do I have a
-                <span style="--i:1; color: yellowgreen">d</span>
-                <span style="--i:2;color: yellowgreen">r</span>
-                <span style="--i:3;color: yellowgreen">i</span>
-                <span style="--i:4;color: yellowgreen">n</span>
-                <span style="--i:5;color: yellowgreen">k</span>
-                <span style="--i:6;color: yellowgreen">i</span>
-                <span style="--i:7;color: yellowgreen">n</span>
-                <span style="--i:8;color: yellowgreen">g</span>
-                problem?
-            </h1>
+    <div class="main_wrapper">
+        <div class="header_wrapper">
+            <div class="drunk_letters_h1">
+                <h1>
+                    Do I have a
+                    <span style="--i:1; color: yellowgreen">d</span>
+                    <span style="--i:2;color: yellowgreen">r</span>
+                    <span style="--i:3;color: yellowgreen">i</span>
+                    <span style="--i:4;color: yellowgreen">n</span>
+                    <span style="--i:5;color: yellowgreen">k</span>
+                    <span style="--i:6;color: yellowgreen">i</span>
+                    <span style="--i:7;color: yellowgreen">n</span>
+                    <span style="--i:8;color: yellowgreen">g</span>
+                    problem?
+                </h1>
+            </div>
+            <h3>So you think that you might have a drinking problem. Please answer 10 questions below and check the
+                result.
+                Note that it is not an official test for alcoholism - we just gathered the most common questions into
+                one
+                test</h3>
         </div>
-        <div class="wine">
+        <div class="images_wrapper">
+            <div class="wine">
 
-            <img src="/img/glass-g8b6ea062a_1920.jpg" alt="bottle">
-        </div>
-        <div class="beer">
-            <img src="/img/beer-g9b5710653_1920.jpg" alt="beer">
+                <img src="/img/glass-g8b6ea062a_1920.jpg" alt="bottle">
+            </div>
+            <div class="beer">
+                <img src="/img/beer-g9b5710653_1920.jpg" alt="beer">
+            </div>
         </div>
 
         <!-- <h2>Self-test for alcoholism</h2> -->
-        <h3>So you think that you might have a drinking problem. Please answer 10 questions below and check the result.
-            Note that it is not an official test for alcoholism - we just gathered the most common questions into one
-            test</h3>
 
-        <div>
+
+        <div class="questions_wrapper">
             <form action="#" name="myForm">
                 <p>1) Are you enjoying drinking alone?</p>
                 <input type="radio" name="question1" class="correct">yes
@@ -88,16 +95,16 @@
 
                 <!-- <input type="reset" value="reset"> -->
             </form>
-            <div class="container2">
-                <button class="btn">submit</button>
-                <div class="your-score"></div>
-            </div>
 
 
 
         </div>
 
 
+        <div class="results_wrapper">
+            <button class="btn">submit</button>
+            <div class="your-score"></div>
+        </div>
 
 
 
@@ -109,7 +116,7 @@
             <p id="display"></p>
         </div> -->
 
-    </div>
+
     <script src="script.js"></script>
 </body>
 
