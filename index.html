@@ -10,94 +10,104 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="drunk">
-            <h1>
-                Do I have a
-                <span style="--i:1; color: yellowgreen">d</span>
-                <span style="--i:2;color: yellowgreen">r</span>
-                <span style="--i:3;color: yellowgreen">i</span>
-                <span style="--i:4;color: yellowgreen">n</span>
-                <span style="--i:5;color: yellowgreen">k</span>
-                <span style="--i:6;color: yellowgreen">i</span>
-                <span style="--i:7;color: yellowgreen">n</span>
-                <span style="--i:8;color: yellowgreen">g</span>
-                problem?
-            </h1>
+    <div class="main_wrapper">
+        <div class="header_wrapper">
+            <div class="drunk_letters_h1">
+                <h1>
+                    Do I have a
+                    <span style="--i:1; color: yellowgreen">d</span>
+                    <span style="--i:2;color: yellowgreen">r</span>
+                    <span style="--i:3;color: yellowgreen">i</span>
+                    <span style="--i:4;color: yellowgreen">n</span>
+                    <span style="--i:5;color: yellowgreen">k</span>
+                    <span style="--i:6;color: yellowgreen">i</span>
+                    <span style="--i:7;color: yellowgreen">n</span>
+                    <span style="--i:8;color: yellowgreen">g</span>
+                    problem?
+                </h1>
+            </div>
+            <h3>So you think that you might have a drinking problem. Please answer 10 questions below and check the
+                result.
+                Note that it is not an official test for alcoholism - we just gathered the most common questions into
+                one
+                test</h3>
         </div>
-        <div class="wine">
+        <div class="images_wrapper_and_form">
+            <div class="wine">
 
-            <img src="/img/glass-g8b6ea062a_1920.jpg" alt="bottle">
-        </div>
-        <div class="beer">
-            <img src="/img/beer-g9b5710653_1920.jpg" alt="beer">
-        </div>
-
-        <!-- <h2>Self-test for alcoholism</h2> -->
-        <h3>So you think that you might have a drinking problem. Please answer 10 questions below and check the result.
-            Note that it is not an official test for alcoholism - we just gathered the most common questions into one
-            test</h3>
-
-        <div>
-            <form action="#" name="myForm">
-                <p>1) Are you enjoying drinking alone?</p>
-                <input type="radio" name="question1" class="correct">yes
-                <input type="radio" name="question1">no
-                <!-- </br> -->
-                <hr class="solid">
-                <p>2) Do you often skip important meetings or tasks because of alcohol?</p>
-                <input type="radio" name="question2" class="correct">yes
-                <input type="radio" name="question2">no
-                <hr class="solid">
-                <p>3) Do you get less drunk as you start drinking more often?</p>
-                <input type="radio" name="question3" class="correct">yes
-                <input type="radio" name="question3">no
-                <hr class="solid">
-                <p>4) Do you tend to behave more and more irresponsibly like for example driving drunk or doing things
-                    which
-                    you regret next morning?</p>
-                <input type="radio" name="question4" class="correct">yes
-                <input type="radio" name="question4">no
-                <hr class="solid">
-                <p>5) Do you choose people who want to spend time with based on whether they drink or not</p>
-                <input type="radio" name="question5" class="correct">yes
-                <input type="radio" name="question5">no
-                <hr class="solid">
-                <p>6) Do your friends or family start noticing that you might have a problem?</p>
-                <input type="radio" name="question6" class="correct">yes
-                <input type="radio" name="question6">no
-                <hr class="solid">
-                <p>7) Have you given up some hobbies or your favourite activities you used to enjoy?</p>
-                <input type="radio" name="question7" class="correct">yes
-                <input type="radio" name="question7">no
-                <hr class="solid">
-                <p>8) Do you start noticing slight changes in your health and wellbeing?</p>
-                <input type="radio" name="question8" class="correct">yes
-                <input type="radio" name="question8">no
-                <hr class="solid">
-                <p>9) Do you get withdrawal symptoms when you stop drinking?</p>
-                <input type="radio" name="question9" class="correct">yes
-                <input type="radio" name="question9">no
-                <hr class="solid">
-                <p>10) Do you notice that your life start losing sense?</p>
-                <input type="radio" name="question10" class="correct">yes
-                <input type="radio" name="question10">no
-                <hr class="solid">
-
-                <!-- <input type="submit" name="submit" value="submit" onclick="result()"> -->
-
-                <!-- <input type="reset" value="reset"> -->
-            </form>
-            <div class="container2">
-                <button class="btn">submit</button>
-                <div class="your-score"></div>
+                <img src="../Alko Test/img/glass-g8b6ea062a_1920.jpg" alt="bottle">
+            </div>
+            <div class="beer">
+                <img src="..Alko Test/img/beer-g9b5710653_1920.jpg" alt="beer">
             </div>
 
+            <div class="form">
 
 
+                <!-- <h2>Self-test for alcoholism</h2> -->
+                <form action="#" name="myForm">
+                    <p>1) Are you enjoying drinking alone?</p>
+                    <input type="radio" name="question1" class="correct">yes
+                    <input type="radio" name="question1">no
+                    <!-- </br> -->
+                    <hr class="solid">
+                    <p>2) Do you often skip important meetings or tasks because of alcohol?</p>
+                    <input type="radio" name="question2" class="correct">yes
+                    <input type="radio" name="question2">no
+                    <hr class="solid">
+                    <p>3) Do you get less drunk as you start drinking more often?</p>
+                    <input type="radio" name="question3" class="correct">yes
+                    <input type="radio" name="question3">no
+                    <hr class="solid">
+                    <p>4) Do you tend to behave more and more irresponsibly like for example driving drunk or doing
+                        things
+                        which
+                        you regret next morning?</p>
+                    <input type="radio" name="question4" class="correct">yes
+                    <input type="radio" name="question4">no
+                    <hr class="solid">
+                    <p>5) Do you choose people who want to spend time with based on whether they drink or not</p>
+                    <input type="radio" name="question5" class="correct">yes
+                    <input type="radio" name="question5">no
+                    <hr class="solid">
+                    <p>6) Do your friends or family start noticing that you might have a problem?</p>
+                    <input type="radio" name="question6" class="correct">yes
+                    <input type="radio" name="question6">no
+                    <hr class="solid">
+                    <p>7) Have you given up some hobbies or your favourite activities you used to enjoy?</p>
+                    <input type="radio" name="question7" class="correct">yes
+                    <input type="radio" name="question7">no
+                    <hr class="solid">
+                    <p>8) Do you start noticing slight changes in your health and wellbeing?</p>
+                    <input type="radio" name="question8" class="correct">yes
+                    <input type="radio" name="question8">no
+                    <hr class="solid">
+                    <p>9) Do you get withdrawal symptoms when you stop drinking?</p>
+                    <input type="radio" name="question9" class="correct">yes
+                    <input type="radio" name="question9">no
+                    <hr class="solid">
+                    <p>10) Do you notice that your life start losing sense?</p>
+                    <input type="radio" name="question10" class="correct">yes
+                    <input type="radio" name="question10">no
+                    <hr class="solid">
+
+                    <!-- <input type="submit" name="submit" value="submit" onclick="result()"> -->
+
+                    <!-- <input type="reset" value="reset"> -->
+                </form>
+            </div>
         </div>
 
 
+
+
+
+
+        <div class="results_wrapper">
+            <button class="btn">submit</button>
+            <!-- <button class="reset">reset</button> -->
+            <div class="your-score"></div>
+        </div>
 
 
 
@@ -109,7 +119,7 @@
             <p id="display"></p>
         </div> -->
 
-    </div>
+
     <script src="script.js"></script>
 </body>
 

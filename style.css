@@ -6,8 +6,9 @@
 	box-sizing: border-box;
 }
 
-.container {
-	position: relative;
+/* wrapper całej strony  */
+
+.main_wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,21 +16,12 @@
 	min-height: 100vh;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	font-family: 'Roboto', sans-serif;
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 .solid {
-	border-top: 1px solid black;
+	border: 1px solid yellowgreen;
 	margin: 10px 0 10px;
-}
-
-.btn {
-	margin: 10px 0 10px;
-	padding: 10px 50px;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	transition: background-color 0.3s, color 0.3s;
-	cursor: pointer;
 }
 
 .btn:hover {
@@ -37,21 +29,21 @@
 	color: black;
 }
 
-.container2 {
-	display: flex;
-	justify-content: space-around;
-	font-weight: bold;
-	font-size: 1.3rem;
-}
-
 .your-score {
 	margin: 20px 40px 0;
 }
 
-/* div zawierający obrazek z butelką */
+/* images wrapper and form */
+.images_wrapper_and_form {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	/* align-items: center; */
+}
+
 .wine {
-	position: absolute;
-	left: 20px;
+	/* position: absolute;
+	left: 20px; */
 	width: 400px;
 }
 .wine img {
@@ -60,8 +52,9 @@
 }
 
 .beer {
-	position: absolute;
-	right: 20px;
+	order: 3;
+	/* position: absolute;
+	right: 20px; */
 	width: 400px;
 }
 
@@ -70,13 +63,19 @@
 	max-height: auto;
 }
 
-.drunk {
-	position: relative;
+/* form with questions */
+
+/* .form {
+	order: 2;
+} */
+
+.drunk_letters_h1 {
+	/* position: relative; */
 	margin-top: 50px;
-	-webkit-box-reflect: below -55px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+	-webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
 
-.drunk span {
+.drunk_letters_h1 span {
 	position: relative;
 	display: inline-block;
 	text-transform: uppercase;
@@ -117,4 +116,23 @@ h3 {
 div * p {
 	margin: 10px 0 10px;
 	font-size: 1.2rem;
+}
+
+.results_wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+
+.btn {
+	margin: 10px 0 10px;
+	padding: 10px 50px;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
+}
+
+.your_score {
+	font-size: 4rem;
 }

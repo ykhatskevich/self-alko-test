@@ -19,11 +19,11 @@ function results(e) {
 
 
 	if (score >= 5 && score <= 10) {
-		yourScore.innerHTML = `Your score is ${score}. It looks like you have a severe drinking problem. You might need to seek help of a specialist.`;
+		yourScore.textContent = `Your score is ${score}. It looks like you have a severe drinking problem. You might need to seek help of a specialist.`;
 	} else if (score < 5 && score >= 2) {
-		yourScore.innerHTML = `Your score is ${score}. Your drinking problem is probably not that bad yet and it can get worse if you do not work on it.`;
+		yourScore.textContent = `Your score is ${score}. Your drinking problem is probably not that bad yet and it can get worse if you do not work on it.`;
 	} else {
-		yourScore.innerHTML = `Apparently you do not have any drinking issues. Please keep going like this and you will be fine.`;
+		yourScore.textContent = `Apparently you do not have any drinking issues. Please keep going like this and you will be fine.`;
 	}
 	score = '';
 	document.myForm.reset();
